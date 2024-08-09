@@ -1,0 +1,16 @@
+{
+    "name": "hugon/criational",
+    "authors": [
+        {
+            "name": "hugo koketu",
+            "email": "hugo.koketu@fatec.sp.gov.br"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "factory/",
+            "singleton/"
+        ]
+    }
+}
