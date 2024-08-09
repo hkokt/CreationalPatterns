@@ -6,11 +6,13 @@
             "email": "hugo.koketu@fatec.sp.gov.br"
         }
     ],
-    "require": {},
     "autoload": {
         "classmap": [
             "factory/",
             "singleton/"
         ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.3"
     }
 }
