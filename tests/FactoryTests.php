@@ -8,8 +8,13 @@ class FactoryTests extends TestCase
 {
     public function testCreateUserWithValidEmail(): void
     {
-        $user = UserFactory::create('testuser', 'testuser@example.com');
+        $username = 'testuser';
+        $email = 'testuser@example.com';
+        $user = UserFactory::create($username, $email);
+
         $this->assertInstanceOf(User::class, $user);
+        $this->assertEquals($email, $user->getEmail());
+        $this->assertEquals($username, $user->getName());
     }
 
     public function testCreateUserWithInvalidEmail(): void
@@ -17,4 +22,5 @@ class FactoryTests extends TestCase
         $this->expectExceptionMessage('Invalid email format.');
         UserFactory::create('testuser', 'invalid-email');
     }
+
 }
