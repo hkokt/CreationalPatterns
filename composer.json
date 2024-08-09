@@ -8,8 +8,10 @@
     ],
     "autoload": {
         "classmap": [
+            "builder/",
             "factory/",
-            "singleton/"
+            "singleton/",
+            "tests/"
         ]
     },
     "require-dev": {
